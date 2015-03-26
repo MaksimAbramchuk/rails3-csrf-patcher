@@ -1,7 +1,5 @@
 # Rails3CsrfPatcher
 
-TODO: Write a gem description
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -18,7 +16,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Install this gem.
+2. That's all.
 
 ## Contributing
 
