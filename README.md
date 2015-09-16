@@ -1,4 +1,11 @@
-# Rails3CsrfPatcher
+# Rails 3 Csrf Patcher
+
+There are many other possibilities, like using a `<script>` tag to make a cross-site request to a URL with a JSONP or JavaScript response. The response is executable code that the attacker can find a way to run, possibly extracting sensitive data. To protect against this data leakage, we disallow cross-site `<script>` tags. Only Ajax requests may have JavaScript responses since XmlHttpRequest is subject to the browser Same-Origin policy - meaning only your site can initiate the request.
+
+So, this gem just extend cross-site request forgery (CSRF) protection to GET requests with JavaScript responses, protecting apps from cross-origin `<script>` tags.
+
+I've took all the code from here
+https://github.com/rails/rails/pull/13345
 
 ## Installation
 
@@ -13,11 +20,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install rails3_csrf_patcher
-
-## Usage
-
-1. Install this gem.
-2. That's all.
 
 ## Contributing
 
